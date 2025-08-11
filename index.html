@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th ISCMGEH South Asia 2025 - Student Conference on Medical Geology</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Add this before your styles.css link -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation">
+  <div class="nav-inner">
+    <!-- LEFT: Brand -->
+    <div class="logo-text">
+      <a href="#home" class="brand-link">
+        <!-- <h1>ISCMGEH SOUTH-ASIA</h1> -->
+        <!-- <p>Medical Geology & Environmental Health</p> -->
+      </a>
+    </div>
+
+    <!-- CENTER: Nav menu (absolutely centered) -->
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link">HOME</a></li>
+      <li><a href="#about" class="nav-link">ABOUT</a></li>
+      <li><a href="#themes" class="nav-link">THEMES</a></li>
+      <li><a href="#committee" class="nav-link">COMMITTEE</a></li>
+      <li><a href="#gallery" class="nav-link">GALLERY</a></li>
+      <li><a href="#blog" class="nav-link">BLOG</a></li>
+      <li><a href="#registration" class="nav-link">REGISTER</a></li>
+    </ul>
+
+    <!-- RIGHT: icons -->
+    <div class="icons">
+      <button id="menuToggle" class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <a href="#profile" class="user-icon" aria-label="User profile">
+        <i class="fas fa-user" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</nav>   
+    
+    <!-- Hero Section -->
+    <!-- <section id="home" class="hero"> -->
+        <!-- <div class="floating-elements"> -->
+            <!-- <div class="floating-element">🧬</div> -->
+            <!-- <div class="floating-element">🌱</div> -->
+            <!-- <div class="floating-element">⚗️</div> -->
+        <!-- </div> -->
+<!--          -->
+        <!-- <div class="hero-container"> -->
+            <!-- <div class="hero-content"> -->
+                <!-- <div class="hero-subtitle">SOUTH-ASIA EDITION 2025</div> -->
+                <!-- <h1>4TH STUDENT CONFERENCE ON MEDICAL GEOLOGY</h1> -->
+                <!-- <p class="hero-description">INTERNATIONAL AND ENVIRONMENTAL HEALTH</p> -->
+                <!-- <p class="hero-date">Virtual Event | March 15-17, 2025</p> -->
+                <!-- <div class="cta-buttons"> -->
+                    <!-- <a href="#registration" class="btn btn-primary">Register Now</a> -->
+                    <!-- <a href="#about" class="btn btn-secondary">Learn More</a> -->
+                <!-- </div> -->
+            <!-- </div> -->
+<!--              -->
+            <!-- <div class="hero-logos"> -->
+                 <!-- <div class="hero-logos"> -->
+                <!-- <img src="images/IMGA.jpg" alt="IMGA Logo" class="partner-logo imga"> -->
+                <!-- <img src="images/image.png" alt="RTMNU Logo" class="partner-logo rtmnu"> -->
+                <!-- <img src="images/IUGS_Commission_GGB_logo_new_2016 (3).jpg" alt="IUGS Logo" class="partner-logo iugs">               -->
+                <!-- <div class="partner-logo segh"></div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </section> -->
+
+    <section id="home" class="hero">
+    <div class="hero-container hero-flex">
+        <div class="hero-left">
+            <div class="main-logo hero-logo-large">
+                <img src="images/4th iscmgeh.png" alt="ISCMGEH Logo">
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-content">
+                <div class="hero-subtitle">SOUTH-ASIA EDITION 2025</div>
+                <h1>4TH STUDENT CONFERENCE ON MEDICAL GEOLOGY AND
+                    ENVIRONMENTAL HEALTH</h1>
+                <p class="hero-description">INTERNATIONAL AND ENVIRONMENTAL HEALTH</p>
+                <p class="hero-date">Virtual Conference |   NOVEMBER 24TH TO 29TH 2025 <br> ABSTRACT SUBMISSION AUG 1ST TO NOV 15TH 2025
+                <div class="cta-buttons">
+                    <a href="#registration" class="btn btn-primary">Register Now</a>
+                    <a href="#" id="submitAbstractBtn" class="btn btn-primary">Submit Abstract</a>
+
+                </div>
+            </div>
+            <div class="hero-logos">
+                <img src="images/IMGA.jpg" alt="IMGA Logo" class="partner-logo imga">
+                <img src="images/image.png" alt="RTMNU Logo" class="partner-logo rtmnu">
+                <img src="images/IUGS_Commission_GGB_logo_new_2016 (3).jpg" alt="IUGS Logo" class="partner-logo iugs">
+                <img src="images/segh.png" alt="SEGH Logo" class="partner-logo segh">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sign-In Modal -->
+<div id="signinModal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <h2>Sign In</h2>
+    <form id="signinForm">
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" required>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign In</button>
+    </form>
+  </div>
+</div>
+
+<!-- Abstract Submission Modal -->
+<div id="abstractModal" class="modal">
+  <div class="modal-content" style="background-color:#214240; color:white;">
+    <span class="modal-close">&times;</span>
+    <h2 style="color:#ff8c42;">Submit Your Abstract</h2>
+    <form id="abstractForm" enctype="multipart/form-data">
+      <div class="form-group">
+        <label style="color:#faedc4;">Title</label>
+        <input type="text" name="title" required>
+      </div>
+      <div class="form-group">
+        <label style="color:#faedc4;">Author Name</label>
+        <input type="text" name="author" required>
+      </div>
+      <div class="form-group">
+        <label style="color:#faedc4;">Institution</label>
+        <input type="text" name="institution" required>
+      </div>
+      <div class="form-group">
+        <label style="color:#faedc4;">Upload Abstract (PDF/DOCX)</label>
+        <input type="file" name="file" accept=".pdf,.doc,.docx" required>
+      </div>
+      <button type="submit" class="btn btn-primary" 
+              style="background:#ff8c42; color:white; border:none;">
+        Submit Abstract
+      </button>
+    </form>
+  </div>
+</div>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About ISCMGEH South Asia 2025</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>We are excited to launch the South-Asian edition of the 4th International Student Conference on Medical Geology and Environmental Health (ISCMGEH), a virtual event focused on empowering the next generation of scientists in understanding the intersection of Earth's processes and human health.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>🏆 Medical Geology: An Emerging Field</h3>
+                        <p>The connection between medicine and geology is more profound than it may appear. Medical geology is an emerging interdisciplinary field that explores how geological materials and processes affect human and ecosystem health.</p>
+                    </div>
+                    
+                    <p>Natural elements like arsenic, fluoride, and radon—originating from rocks, soils, and groundwater—can have both beneficial and harmful effects on health. This conference provides a unique platform for students to share their research and connect with global experts.</p>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="visual-element">
+                      <img src="images/About US.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- About Section -->
+    <!-- <section id="about" class="about-section"> -->
+        <!-- <div class="container"> -->
+            <!-- <h2 class="section-title">4th International Student Conference on Medical Geology and Environmental Health - South Asian Edition (ISCMGEH-South Asia)</h2> -->
+<!--              -->
+            <!-- <div class="about-content"> -->
+                <!-- <div class="about-intro"> -->
+                    <!-- <p>We are excited to launch the South-Asian edition of the 4th International Student Conference on Medical Geology and Environmental Health (ISCMGEH), a virtual event focused on empowering the next generation of scientists in understanding the intersection of Earth's processes and human health. This unique series of student conferences began in 2021 with its inaugural edition hosted in Latin America, followed by a dedicated African edition in 2022, and European-focused conference in 2024. Each event successfully brought together students, early-career researchers, and global experts, offering a vibrant platform to share research, ideas, and collaborative opportunities across continents.</p> -->
+                <!-- </div> -->
+
+                <!-- <div class="about-focus-box"> -->
+                    <!-- <h3>SOUTH ASIA FOCUS</h3> -->
+                    <!-- <p>This year's edition turns its focus to South-Asia, which is marked by immense geological diversity and rapid environmental transformation. From naturally occurring arsenic and fluoride in groundwater, to heavy metal contamination from mining, dust storms, urban air pollution, and climate-sensitive vector-borne diseases, South-Asia presents a wide array of challenges that lie at the heart of Medical Geology. At the same time, the region offers rich opportunities for interdisciplinary research, community-based health interventions, and international collaboration.</p> -->
+                <!-- </div> -->
+
+                <!-- <div class="what-is-box"> -->
+                    <!-- <h3>WHAT IS ISCMGEH-SOUTH ASIA?</h3> -->
+                    <!-- <p>The 4th International Student Conference on Medical Geology and Environmental Health– South Asian Edition (ISCMGEH-South Asia) is a student-focused virtual event open to undergraduate and postgraduate students from a wide range of disciplines, including Medical Geology, Environmental Health, and Geoscience applications in public health.</p> -->
+<!--                      -->
+                    <!-- <div class="benefits-list"> -->
+                        <!-- <h4>This conference provides a valuable platform for students to:</h4> -->
+                        <!-- <ul> -->
+                            <!-- <li>Present original research</li> -->
+                            <!-- <li>Connect with global experts</li> -->
+                            <!-- <li>Receive constructive feedback</li> -->
+                            <!-- <li>Develop communication skills</li> -->
+                            <!-- <li>Expand academic networks</li> -->
+                        <!-- </ul> -->
+                        <!-- <p><em>Set in a supportive and low-pressure environment, ISCMGEH-South Asia encourages early-career researchers to confidently share their work while gaining experience that will benefit them in future academic and professional endeavors.</em></p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <div class="special-features"> -->
+                    <!-- <h3>WHAT MAKES ISCMGEH-SOUTH ASIA SPECIAL?</h3> -->
+                    <!-- <div class="features-grid"> -->
+                        <!-- <div class="feature-item"> -->
+                            <!-- <div class="feature-icon">💰</div> -->
+                            <!-- <h4>NO REGISTRATION FEES</h4> -->
+                            <!-- <p>JOIN THE INTERNATIONAL RESEARCH COMMUNITY WITHOUT FINANCIAL CONSTRAINTS</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="feature-item"> -->
+                            <!-- <div class="feature-icon">🌐</div> -->
+                            <!-- <h4>COMPLETELY VIRTUAL</h4> -->
+                            <!-- <p>PARTICIPATE FROM ANYWHERE, REMOVING TRAVEL BARRIERS WHILE EXPANDING YOUR REACH</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="feature-item"> -->
+                            <!-- <div class="feature-icon">🏔️</div> -->
+                            <!-- <h4>SOUTH ASIA-FOCUSED</h4> -->
+                            <!-- <p>ADDRESS REGION-SPECIFIC ISSUES SUCH AS ARSENIC IN GROUNDWATER, FLUORIDE TOXICITY, AIR POLLUTION, HEAVY METAL EXPOSURE, VECTOR-BORNE DISEASES, AND MORE</p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <div class="student-gains"> -->
+                    <!-- <h3>WHAT STUDENTS WILL GAIN?</h3> -->
+                    <!-- <div class="gains-grid"> -->
+                        <!-- <div class="gain-item"> -->
+                            <!-- <div class="gain-icon">🔬</div> -->
+                            <!-- <h4>PRESENT RESEARCH ON REAL-WORLD PROBLEMS</h4> -->
+                            <!-- <p>SHARE YOUR WORK ON PRESSING ISSUES WHERE ENVIRONMENT AND PUBLIC HEALTH INTERSECT—BRINGING ACADEMIC KNOWLEDGE INTO PRACTICAL CONTEXTS.</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="gain-item"> -->
+                            <!-- <div class="gain-icon">💬</div> -->
+                            <!-- <h4>BUILD ACADEMIC COMMUNICATION SKILLS</h4> -->
+                            <!-- <p>PRACTICE WRITING ABSTRACTS AND DELIVERING PRESENTATIONS IN ENGLISH—ESSENTIAL TOOLS FOR ANY RESEARCH CAREER.</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="gain-item"> -->
+                            <!-- <div class="gain-icon">👨‍🏫</div> -->
+                            <!-- <h4>GAIN CONSTRUCTIVE EXPERT FEEDBACK</h4> -->
+                            <!-- <p>RECEIVE THOUGHTFUL, RESEARCH-DRIVEN INPUT FROM EXPERIENCED ACADEMICS AND PROFESSIONALS IN MEDICAL GEOLOGY AND ENVIRONMENTAL HEALTH.</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="gain-item"> -->
+                            <!-- <div class="gain-icon">🏆</div> -->
+                            <!-- <h4>GET RECOGNIZED FOR EXCELLENCE</h4> -->
+                            <!-- <p>COMPETE FOR AWARDS, INCLUDING SPRINGER-SUPPORTED PRIZES AND FREE ONE-YEAR MEMBERSHIPS IN PARTNER ORGANIZATIONS.</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="gain-item"> -->
+                            <!-- <div class="gain-icon">📚</div> -->
+                            <!-- <h4>ENHANCE THE VISIBILITY OF YOUR WORK</h4> -->
+                            <!-- <p>ACCEPTED ABSTRACTS WILL BE PUBLISHED ON RESPECTED, AFFILIATED PLATFORMS, OFFERING VALUABLE EXPOSURE FOR STUDENT RESEARCH.</p> -->
+                        <!-- </div> -->
+                        <!-- <div class="gain-item"> -->
+                            <!-- <div class="gain-icon">🌍</div> -->
+                            <!-- <h4>CONNECT WITH A GROWING NETWORK</h4> -->
+                            <!-- <p>MEET PEERS AND EXPERTS WORKING ON SIMILAR CHALLENGES ACROSS ASIA AND THE GLOBE, BUILDING LONG-TERM COLLABORATIONS AND FRIENDSHIPS.</p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </section> 
+
+    <!-- Conference Themes Section -->
+    <section id="themes" class="themes-section">
+        <div class="container">
+            <h2 class="section-title">Conference Themes & Topics</h2>
+            <p class="section-subtitle">Explore the diverse research areas and topics that will be covered in our technical sessions</p>
+            
+            <div class="themes-grid">
+                <div class="theme-card" data-theme="environmental">
+                    <div class="theme-icon">🌱</div>
+                    <h3>Environmental Sources and Pathways</h3>
+                    <div class="theme-preview">
+                        <p>Soil contamination, air quality, water resources...</p>
+                        <span class="expand-btn">View All Topics</span>
+                    </div>
+                    <div class="theme-details">
+                        <ul>
+                            <li>Soil contamination and remediation techniques</li>
+                            <li>Air quality assessment and atmospheric pollution</li>
+                            <li>Water resource contamination and treatment</li>
+                            <li>Dust exposure and health impact studies</li>
+                            <li>Sediment geochemistry and environmental indicators</li>
+                            <li>Food safety and agricultural geology</li>
+                            <li>Geobotanical indicators and plant uptake</li>
+                            <li>Environmental microbiology and biogeochemistry</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="theme-card" data-theme="climate">
+                    <div class="theme-icon">🌡️</div>
+                    <h3>Climate Change and Health</h3>
+                    <div class="theme-preview">
+                        <p>Extreme weather impacts, heat disorders...</p>
+                        <span class="expand-btn">View All Topics</span>
+                    </div>
+                    <div class="theme-details">
+                        <ul>
+                            <li>Extreme weather event health impacts</li>
+                            <li>Heat-related health disorders and mortality</li>
+                            <li>Drought effects and water scarcity health risks</li>
+                            <li>Flood-associated diseases and contamination</li>
+                            <li>Climate-induced mental health issues</li>
+                            <li>Epidemiological climate change studies</li>
+                            <li>Endemic disease pattern changes</li>
+                            <li>Pandemic preparedness and climate resilience</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="theme-card" data-theme="contaminants">
+                    <div class="theme-icon">⚠️</div>
+                    <h3>Emerging Contaminants</h3>
+                    <div class="theme-preview">
+                        <p>Microplastics, PFAS, pharmaceutical residues...</p>
+                        <span class="expand-btn">View All Topics</span>
+                    </div>
+                    <div class="theme-details">
+                        <ul>
+                            <li>Organic pollutant analysis and detection</li>
+                            <li>Microplastics and nanoplastics in environment</li>
+                            <li>PFAS contamination research and remediation</li>
+                            <li>Technology-critical elements and rare earths</li>
+                            <li>Pharmaceutical residues in water systems</li>
+                            <li>Industrial chemical pollutants assessment</li>
+                            <li>Electronic waste environmental impacts</li>
+                            <li>Endocrine disrupting compounds studies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="theme-card" data-theme="methods">
+                    <div class="theme-icon">🔬</div>
+                    <h3>Analytical Methods and Technologies</h3>
+                    <div class="theme-preview">
+                        <p>Novel techniques, monitoring systems...</p>
+                        <span class="expand-btn">View All Topics</span>
+                    </div>
+                    <div class="theme-details">
+                        <ul>
+                            <li>Novel analytical techniques development</li>
+                            <li>Method development and validation protocols</li>
+                            <li>Environmental monitoring systems design</li>
+                            <li>Exposure assessment methodologies</li>
+                            <li>Remediation technology innovations</li>
+                            <li>Remote sensing applications in health</li>
+                            <li>GIS applications in medical geology</li>
+                            <li>Digital health technologies integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="theme-card" data-theme="social">
+                    <div class="theme-icon">👥</div>
+                    <h3>Social and Economic Perspectives</h3>
+                    <div class="theme-preview">
+                        <p>Health communication, policy development...</p>
+                        <span class="expand-btn">View All Topics</span>
+                    </div>
+                    <div class="theme-details">
+                        <ul>
+                            <li>Health communication strategies and outreach</li>
+                            <li>Environmental policy development and analysis</li>
+                            <li>Regulatory guidelines implementation</li>
+                            <li>Economic impact assessments and cost-benefit</li>
+                            <li>Land use planning and public health</li>
+                            <li>Community health programs development</li>
+                            <li>Environmental justice and equity issues</li>
+                            <li>Sustainable development goals alignment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="theme-card" data-theme="risk">
+                    <div class="theme-icon">⚖️</div>
+                    <h3>Risk Assessment and Management</h3>
+                    <div class="theme-preview">
+                        <p>Health risk models, community well-being...</p>
+                        <span class="expand-btn">View All Topics</span>
+                    </div>
+                    <div class="theme-details">
+                        <ul>
+                            <li>Health risk assessment model development</li>
+                            <li>Sustainable materials research and alternatives</li>
+                            <li>Community well-being and resilience studies</li>
+                            <li>Citizen science applications and engagement</li>
+                            <li>Environmental health education programs</li>
+                            <li>Risk communication strategies and tools</li>
+                            <li>Emergency preparedness planning</li>
+                            <li>Public health intervention design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Committee Section -->
+    <section id="committee" class="committee-section">
+        <div class="container">
+            <h2 class="section-title">Conference Committees</h2>
+            
+            <!-- Committee Tabs -->
+            <div class="committee-tabs">
+                <button class="tab-btn active" data-tab="organizing">Organizing Committee</button>
+                <button class="tab-btn" data-tab="scientific">Scientific Committee</button>
+                <button class="tab-btn" data-tab="advisory">Advisory Board</button>
+            </div>
+
+            <!-- Organizing Committee -->
+            <div class="committee-content active" id="organizing">
+                <h3 class="committee-heading">Organizing Committee</h3>
+                <div class="committee-grid">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="https://via.placeholder.com/150/2c7873/ffffff?text=DR" alt="Dr. Rajesh Kumar Sharma">
+                        </div>
+                        <div class="member-info">
+                            <h4>Dr. Rajesh Kumar Sharma</h4>
+                            <p class="member-title">Conference Chair</p>
+                            <p class="member-institution">Rashtrasant Tukadoji Maharaj Nagpur University</p>
+                            <p class="member-specialization">Environmental Geology, Hydrogeochemistry</p>
+                            <div class="member-contact">
+                                <a href="mailto:rk.sharma@rtmnu.ac.in"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fab fa-researchgate"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="https://via.placeholder.com/150/2c7873/ffffff?text=DR" alt="Dr. Priya Patel">
+                        </div>
+                        <div class="member-info">
+                            <h4>Dr. Priya Patel</h4>
+                            <p class="member-title">Scientific Committee Head</p>
+                            <p class="member-institution">Indian Institute of Technology, Delhi</p>
+                            <p class="member-specialization">Medical Geology, Environmental Health</p>
+                            <div class="member-contact">
+                                <a href="mailto:priya.patel@iitd.ac.in"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="https://via.placeholder.com/150/2c7873/ffffff?text=DR" alt="Dr. Mohammad Ali Khan">
+                        </div>
+                        <div class="member-info">
+                            <h4>Dr. Mohammad Ali Khan</h4>
+                            <p class="member-title">Regional Coordinator</p>
+                            <p class="member-institution">University of Karachi, Pakistan</p>
+                            <p class="member-specialization">Geochemistry, Water Quality</p>
+                            <div class="member-contact">
+                                <a href="mailto:ma.khan@uok.edu.pk"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fab fa-orcid"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="https://via.placeholder.com/150/2c7873/ffffff?text=DR" alt="Dr. Anita Singh">
+                        </div>
+                        <div class="member-info">
+                            <h4>Dr. Anita Singh</h4>
+                            <p class="member-title">Technical Coordinator</p>
+                            <p class="member-institution">Banaras Hindu University</p>
+                            <p class="member-specialization">Environmental Toxicology</p>
+                            <div class="member-contact">
+                                <a href="mailto:anita.singh@bhu.ac.in"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fab fa-researchgate"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scientific Committee -->
+            <div class="committee-content" id="scientific">
+                <h3 class="committee-heading">Scientific Committee</h3>
+                <div class="committee-grid">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="https://via.placeholder.com/150/ff8c42/ffffff?text=PR" alt="Prof. Sarah Ahmed">
+                        </div>
+                        <div class="member-info">
+                            <h4>Prof. Sarah Ahmed</h4>
+                            <p class="member-title">Keynote Speaker</p>
+                            <p class="member-institution">University of Colombo, Sri Lanka</p>
+                            <p class="member-specialization">Medical Mineralogy, Public Health</p>
+                            <div class="member-contact">
+                                <a href="mailto:sarah.ahmed@cmb.ac.lk"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="https://via.placeholder.com/150/ff8c42/ffffff?text=DR" alt="Dr. Kumar Ghosh">
+                        </div>
+                        <div class="member-info">
+                            <h4>Dr. Kumar Ghosh</h4>
+                            <p class="member-title">Theme Coordinator</p>
+                            <p class="member-institution">Jadavpur University, India</p>
+                            <p class="member-specialization">Environmental Geochemistry</p>
+                            <div class="member-contact">
+                                <a href="mailto:k.ghosh@jadavpuruniversity.in"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fab fa-researchgate"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="https://via.placeholder.com/150/ff8c42/ffffff?text=DR" alt="Dr. Fatima Rahman">
+                        </div>
+                        <div class="member-info">
+                            <h4>Dr. Fatima Rahman</h4>
+                            <p class="member-title">Review Panel Lead</p>
+                            <p class="member-institution">University of Dhaka, Bangladesh</p>
+                            <p class="member-specialization">Water Chemistry, Health Risk</p>
+                            <div class="member-contact">
+                                <a href="mailto:fatima.rahman@du.ac.bd"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fab fa-orcid"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="https://via.placeholder.com/150/ff8c42/ffffff?text=PR" alt="Prof. Arjun Thapa">
+                        </div>
+                        <div class="member-info">
+                            <h4>Prof. Arjun Thapa</h4>
+                            <p class="member-title">Session Chair</p>
+                            <p class="member-institution">Tribhuvan University, Nepal</p>
+                            <p class="member-specialization">Himalayan Geology, Climate Health</p>
+                            <div class="member-contact">
+                                <a href="mailto:arjun.thapa@tu.edu.np"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advisory Board -->
+            <div class="committee-content" id="advisory">
+                <h3 class="committee-heading">Advisory Board</h3>
+                <div class="committee-grid">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="https://via.placeholder.com/150/4a9b95/ffffff?text=PR" alt="Prof. Robert Johnson">
+                        </div>
+                        <div class="member-info">
+                            <h4>Prof. Robert Johnson</h4>
+                            <p class="member-title">SEGH President</p>
+                            <p class="member-institution">Society for Environmental Geochemistry and Health</p>
+                            <p class="member-specialization">Medical Geology, International Collaboration</p>
+                            <div class="member-contact">
+                                <a href="mailto:president@segh.net"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fab fa-researchgate"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="https://via.placeholder.com/150/4a9b95/ffffff?text=DR" alt="Dr. Maria Santos">
+                        </div>
+                        <div class="member-info">
+                            <h4>Dr. Maria Santos</h4>
+                            <p class="member-title">IMGA Representative</p>
+                            <p class="member-institution">International Medical Geology Association</p>
+                            <p class="member-specialization">Global Health Geology</p>
+                            <div class="member-contact">
+                                <a href="mailto:m.santos@medicalgeology.org"><i class="fas fa-envelope"></i></a>
+                                <a href="#"><i class="fab fa-orcid"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Medical Geology Literature Gallery</h2>
+            <p class="section-subtitle">Explore essential resources in medical geology and environmental health</p>
+            
+            <!-- Gallery Filter Tabs -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Resources</button>
+                <button class="filter-btn" data-filter="books">Textbooks</button>
+                <button class="filter-btn" data-filter="papers">Research Papers</button>
+                <button class="filter-btn" data-filter="news">News & Reports</button>
+                <button class="filter-btn" data-filter="journals">Journals</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Books -->
+                <div class="gallery-item" data-category="books">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/300x200/2c7873/ffffff?text=Medical+Geology" alt="Medical Geology Textbook">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-book"></i>
+                            <h4>Medical Geology</h4>
+                            <p>Comprehensive textbook on medical geology principles</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Medical Geology: Effects of Geological Environment on Human Health</h4>
+                        <p class="gallery-author">by Olle Selinus et al.</p>
+                        <p class="gallery-description">The definitive textbook covering all aspects of medical geology and environmental health.</p>
+                        <a href="#" class="gallery-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="books">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/300x200/ff8c42/ffffff?text=Environmental+Health" alt="Environmental Health Book">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-book-open"></i>
+                            <h4>Environmental Health</h4>
+                            <p>Geological factors in environmental health</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Environmental Health and Medical Geology</h4>
+                        <p class="gallery-author">by Jane Plantinga et al.</p>
+                        <p class="gallery-description">Focus on environmental factors affecting human health from geological perspective.</p>
+                        <a href="#" class="gallery-link">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Research Papers -->
+                <div class="gallery-item" data-category="papers">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/300x200/4a9b95/ffffff?text=Arsenic+Research" alt="Arsenic Research Paper">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>Arsenic Studies</h4>
+                            <p>Groundwater arsenic contamination research</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Arsenic in Groundwater: South Asian Perspective</h4>
+                        <p class="gallery-author">Journal of Environmental Health, 2024</p>
+                        <p class="gallery-description">Comprehensive study on arsenic contamination in South Asian groundwater systems.</p>
+                        <a href="#" class="gallery-link">Read Paper</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="papers">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/300x200/f4a261/ffffff?text=Fluoride+Study" alt="Fluoride Research">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-microscope"></i>
+                            <h4>Fluoride Research</h4>
+                            <p>Health impacts of fluoride exposure</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Fluoride in Drinking Water: Health Risk Assessment</h4>
+                        <p class="gallery-author">Environmental Geochemistry and Health, 2024</p>
+                        <p class="gallery-description">Risk assessment study of fluoride contamination in drinking water.</p>
+                        <a href="#" class="gallery-link">Read Paper</a>
+                    </div>
+                </div>
+
+                <!-- News & Reports -->
+                <div class="gallery-item" data-category="news">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/300x200/1e5450/ffffff?text=WHO+Report" alt="WHO Report">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-newspaper"></i>
+                            <h4>WHO Report</h4>
+                            <p>Global environmental health report</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>WHO Environmental Health Report 2024</h4>
+                        <p class="gallery-author">World Health Organization</p>
+                        <p class="gallery-description">Latest WHO report on environmental health challenges globally.</p>
+                        <a href="#" class="gallery-link">Download Report</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="news">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/300x200/2c7873/ffffff?text=Climate+Health" alt="Climate Health News">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-globe-americas"></i>
+                            <h4>Climate & Health</h4>
+                            <p>Recent developments in climate health</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Climate Change and Health Impacts in South Asia</h4>
+                        <p class="gallery-author">Nature Climate Change, 2024</p>
+                        <p class="gallery-description">Latest research on climate change health impacts in South Asian region.</p>
+                        <a href="#" class="gallery-link">Read Article</a>
+                    </div>
+                </div>
+
+                <!-- Journals -->
+                <div class="gallery-item" data-category="journals">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/300x200/ff8c42/ffffff?text=EGH+Journal" alt="Environmental Geochemistry and Health">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-journal-whills"></i>
+                            <h4>EGH Journal</h4>
+                            <p>Leading journal in medical geology</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Environmental Geochemistry and Health</h4>
+                        <p class="gallery-author">Springer Nature</p>
+                        <p class="gallery-description">Premier journal publishing research in environmental geochemistry and health.</p>
+                        <a href="#" class="gallery-link">Visit Journal</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="journals">
+                    <div class="gallery-image">
+                        <img src="https://via.placeholder.com/300x200/4a9b95/ffffff?text=Applied+Geochem" alt="Applied Geochemistry">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-atom"></i>
+                            <h4>Applied Geochemistry</h4>
+                            <p>Geochemistry applications in health</p>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Applied Geochemistry</h4>
+                        <p class="gallery-author">Elsevier</p>
+                        <p class="gallery-description">International journal covering applied aspects of geochemistry including health applications.</p>
+                        <a href="#" class="gallery-link">Visit Journal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest from Our Blog</h2>
+            <p class="section-subtitle">Stay updated with the latest insights, research, and news in medical geology</p>
+            
+            <!-- Featured Blog Post -->
+            <div class="featured-blog">
+                <div class="featured-blog-image">
+                    <img src="https://via.placeholder.com/600x300/2c7873/ffffff?text=Featured+Article" alt="Featured Blog Post">
+                </div>
+                <div class="featured-blog-content">
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="fas fa-calendar"></i> January 15, 2025</span>
+                        <span class="blog-category">Medical Geology</span>
+                    </div>
+                    <h3>Understanding Medical Geology: A Student's Guide to Getting Started</h3>
+                    <p>Medical geology is an emerging interdisciplinary field that explores the relationship between geological materials and processes and human health. This comprehensive guide helps students understand the fundamentals and research opportunities...</p>
+                    <a href="#" class="read-more-btn">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <div class="blog-post-image">
+                        <img src="https://via.placeholder.com/400x250/ff8c42/ffffff?text=Arsenic+Study" alt="Arsenic Contamination">
+                        <div class="blog-post-category">Research</div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span><i class="fas fa-calendar"></i> January 12, 2025</span>
+                            <span><i class="fas fa-user"></i> Dr. Priya Patel</span>
+                        </div>
+                        <h4>Arsenic Contamination in South Asian Groundwater: Current Research</h4>
+                        <p>Exploring the latest research on arsenic contamination patterns across South Asian countries and their health implications for millions of people...</p>
+                        <a href="#" class="blog-read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-post-image">
+                        <img src="https://via.placeholder.com/400x250/4a9b95/ffffff?text=Climate+Health" alt="Climate and Health">
+                        <div class="blog-post-category">Climate</div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span><i class="fas fa-calendar"></i> January 10, 2025</span>
+                            <span><i class="fas fa-user"></i> Prof. Sarah Ahmed</span>
+                        </div>
+                        <h4>Climate Change Impacts on Geological Health Factors</h4>
+                        <p>How changing climate patterns are affecting geological processes and their subsequent impacts on human health across different regions...</p>
+                        <a href="#" class="blog-read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-post-image">
+                        <img src="https://via.placeholder.com/400x250/f4a261/ffffff?text=Research+Methods" alt="Research Methods">
+                        <div class="blog-post-category">Methodology</div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span><i class="fas fa-calendar"></i> January 8, 2025</span>
+                            <span><i class="fas fa-user"></i> Dr. Kumar Ghosh</span>
+                        </div>
+                        <h4>Advanced Analytical Methods in Medical Geology Research</h4>
+                        <p>A comprehensive overview of cutting-edge analytical techniques and methodologies used in modern medical geology research...</p>
+                        <a href="#" class="blog-read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-post-image">
+                        <img src="https://via.placeholder.com/400x250/1e5450/ffffff?text=Career+Guide" alt="Career in Medical Geology">
+                        <div class="blog-post-category">Career</div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span><i class="fas fa-calendar"></i> January 5, 2025</span>
+                            <span><i class="fas fa-user"></i> Dr. Anita Singh</span>
+                        </div>
+                        <h4>Career Opportunities in Medical Geology: A Student's Guide</h4>
+                        <p>Exploring various career paths available for students interested in medical geology, from research to public health policy...</p>
+                        <a href="#" class="blog-read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-post-image">
+                        <img src="https://via.placeholder.com/400x250/2c7873/ffffff?text=Conference+Updates" alt="Conference News">
+                        <div class="blog-post-category">Conference</div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span><i class="fas fa-calendar"></i> January 3, 2025</span>
+                            <span><i class="fas fa-user"></i> Conference Team</span>
+                        </div>
+                        <h4>ISCMGEH 2025: What to Expect from This Year's Conference</h4>
+                        <p>Get insights into the upcoming conference themes, speakers, and opportunities for student researchers to showcase their work...</p>
+                        <a href="#" class="blog-read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-post-image">
+                        <img src="https://via.placeholder.com/400x250/ff8c42/ffffff?text=Success+Stories" alt="Student Success">
+                        <div class="blog-post-category">Success Stories</div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-meta">
+                            <span><i class="fas fa-calendar"></i> December 30, 2024</span>
+                            <span><i class="fas fa-user"></i> Alumni Network</span>
+                        </div>
+                        <h4>From Conference to Career: Success Stories of ISCMGEH Alumni</h4>
+                        <p>Inspiring stories of former conference participants who have made significant contributions to medical geology and environmental health...</p>
+                        <a href="#" class="blog-read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Blog Pagination -->
+            <div class="blog-pagination">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn">Next <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <!-- Blog Newsletter Signup -->
+            <div class="blog-newsletter">
+                <div class="newsletter-content">
+                    <h3>Stay Updated with Our Blog</h3>
+                    <p>Subscribe to receive the latest articles, research insights, and conference updates directly in your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="registration-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Conference Registration</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Join the global community of medical geology researchers - Registration is FREE for students!</p>
+            
+            <div class="registration-container">
+                <div class="registration-info">
+                    <div class="info-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Important Dates</h3>
+                        <ul>
+                            <li><strong>Abstract Submission Deadline:</strong> February 28, 2025</li>
+                            <li><strong>Registration Deadline:</strong> March 10, 2025</li>
+                            <li><strong>Conference Dates:</strong> March 15-17, 2025</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Student Benefits</h3>
+                        <ul>
+                            <li>Free registration for all students</li>
+                            <li>Digital certificate of participation</li>
+                            <li>Best presentation awards</li>
+                            <li>Publication opportunities</li>
+                            <li>Networking with global experts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="registration-form-container">
+                    <form id="registrationForm" class="registration-form">
+                        <h3>Register Now</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="institution">Institution/University *</label>
+                                <input type="text" id="institution" name="institution" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country *</label>
+                                <select id="country" name="country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="india">India</option>
+                                    <option value="pakistan">Pakistan</option>
+                                    <option value="bangladesh">Bangladesh</option>
+                                    <option value="sri-lanka">Sri Lanka</option>
+                                    <option value="nepal">Nepal</option>
+                                    <option value="bhutan">Bhutan</option>
+                                    <option value="maldives">Maldives</option>
+                                    <option value="afghanistan">Afghanistan</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="degree">Current Degree Level *</label>
+                                <select id="degree" name="degree" required>
+                                    <option value="">Select Degree Level</option>
+                                    <option value="undergraduate">Undergraduate (BSc/BTech)</option>
+                                    <option value="masters">Master's (MSc/MTech)</option>
+                                    <option value="phd">PhD</option>
+                                    <option value="postdoc">Post-doctoral</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="researchArea">Research Theme *</label>
+                                <select id="researchArea" name="researchArea" required>
+                                    <option value="">Select Research Theme</option>
+                                    <option value="environmental-sources">Environmental Sources and Pathways</option>
+                                    <option value="climate-health">Climate Change and Health</option>
+                                    <option value="emerging-contaminants">Emerging Contaminants</option>
+                                    <option value="methods-tech">Analytical Methods and Technologies</option>
+                                    <option value="social-economic">Social and Economic Perspectives</option>
+                                    <option value="risk-assessment">Risk Assessment and Management</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="abstractTitle">Abstract Title</label>
+                            <input type="text" id="abstractTitle" name="abstractTitle" placeholder="Enter your research title">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="abstractText">Abstract (Max 300 words)</label>
+                            <textarea id="abstractText" name="abstractText" placeholder="Provide a brief abstract including objectives, methodology, key findings, and conclusions..." maxlength="2000"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="presentationType">Presentation Type</label>
+                            <select id="presentationType" name="presentationType">
+                                <option value="oral">Oral Presentation (15 min)</option>
+                                <option value="poster">Poster Presentation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="termsAccept" name="termsAccept" required>
+                                I agree that my abstract will be reviewed by the scientific committee and may be published in conference proceedings *
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="emailUpdates" name="emailUpdates">
+                                I would like to receive updates about future ISCMGEH conferences
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i> Submit Registration
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>ISCMGEH South Asia 2025</h3>
+                    <p>4th International Student Conference on Medical Geology and Environmental Health</p>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> contact@iscmgeh-southasia.org</p>
+                        <p><i class="fas fa-phone"></i> +91-712-XXXXXX</p>
+                        <p><i class="fas fa-map-marker-alt"></i> RTMNU, Nagpur, India</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Conference</a></li>
+                        <li><a href="#themes">Conference Themes</a></li>
+                        <li><a href="#committee">Committee</a></li>
+                        <li><a href="#registration">Registration</a></li>
+                        <li><a href="#gallery">Resources</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Conference Themes</h3>
+                    <ul>
+                        <li><a href="#themes">Environmental Sources</a></li>
+                        <li><a href="#themes">Climate Change & Health</a></li>
+                        <li><a href="#themes">Emerging Contaminants</a></li>
+                        <li><a href="#themes">Analytical Methods</a></li>
+                        <li><a href="#themes">Risk Assessment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="#"><i class="fab fa-researchgate"></i> ResearchGate</a>
+                        <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                    </div>
+                    
+                    <div class="newsletter-signup">
+                        <h4>Stay Updated</h4>
+                        <form class="footer-newsletter">
+                            <input type="email" placeholder="Your email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 ISCMGEH South Asia. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Code of Conduct</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success/Error Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalMessage"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
